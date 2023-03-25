@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"threebitprelab4\startup_stm32f103x6.o"
+"threebitprelab4\main.o"
+"threebitprelab4\stm32f1xx_it.o"
+"threebitprelab4\stm32f1xx_hal_msp.o"
+"threebitprelab4\stm32f1xx_hal_gpio_ex.o"
+"threebitprelab4\stm32f1xx_hal_tim.o"
+"threebitprelab4\stm32f1xx_hal_tim_ex.o"
+"threebitprelab4\stm32f1xx_hal.o"
+"threebitprelab4\stm32f1xx_hal_rcc.o"
+"threebitprelab4\stm32f1xx_hal_rcc_ex.o"
+"threebitprelab4\stm32f1xx_hal_gpio.o"
+"threebitprelab4\stm32f1xx_hal_dma.o"
+"threebitprelab4\stm32f1xx_hal_cortex.o"
+"threebitprelab4\stm32f1xx_hal_pwr.o"
+"threebitprelab4\stm32f1xx_hal_flash.o"
+"threebitprelab4\stm32f1xx_hal_flash_ex.o"
+"threebitprelab4\stm32f1xx_hal_exti.o"
+"threebitprelab4\system_stm32f1xx.o"
+--strict --scatter "threebitprelab4\threebitprelab4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "threebitprelab4.map" -o threebitprelab4\threebitprelab4.axf

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"4bitcounter\startup_stm32f103x6.o"
+"4bitcounter\main.o"
+"4bitcounter\stm32f1xx_it.o"
+"4bitcounter\stm32f1xx_hal_msp.o"
+"4bitcounter\stm32f1xx_hal_gpio_ex.o"
+"4bitcounter\stm32f1xx_hal_tim.o"
+"4bitcounter\stm32f1xx_hal_tim_ex.o"
+"4bitcounter\stm32f1xx_hal.o"
+"4bitcounter\stm32f1xx_hal_rcc.o"
+"4bitcounter\stm32f1xx_hal_rcc_ex.o"
+"4bitcounter\stm32f1xx_hal_gpio.o"
+"4bitcounter\stm32f1xx_hal_dma.o"
+"4bitcounter\stm32f1xx_hal_cortex.o"
+"4bitcounter\stm32f1xx_hal_pwr.o"
+"4bitcounter\stm32f1xx_hal_flash.o"
+"4bitcounter\stm32f1xx_hal_flash_ex.o"
+"4bitcounter\stm32f1xx_hal_exti.o"
+"4bitcounter\system_stm32f1xx.o"
+--strict --scatter "4bitcounter\4bitcounter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "4bitcounter.map" -o 4bitcounter\4bitcounter.axf

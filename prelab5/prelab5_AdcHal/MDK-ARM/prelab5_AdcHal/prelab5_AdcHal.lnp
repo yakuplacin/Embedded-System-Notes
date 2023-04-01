@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"prelab5_adchal\startup_stm32f103x6.o"
+"prelab5_adchal\main.o"
+"prelab5_adchal\stm32f1xx_it.o"
+"prelab5_adchal\stm32f1xx_hal_msp.o"
+"prelab5_adchal\stm32f1xx_hal_gpio_ex.o"
+"prelab5_adchal\stm32f1xx_hal_adc.o"
+"prelab5_adchal\stm32f1xx_hal_adc_ex.o"
+"prelab5_adchal\stm32f1xx_hal.o"
+"prelab5_adchal\stm32f1xx_hal_rcc.o"
+"prelab5_adchal\stm32f1xx_hal_rcc_ex.o"
+"prelab5_adchal\stm32f1xx_hal_gpio.o"
+"prelab5_adchal\stm32f1xx_hal_dma.o"
+"prelab5_adchal\stm32f1xx_hal_cortex.o"
+"prelab5_adchal\stm32f1xx_hal_pwr.o"
+"prelab5_adchal\stm32f1xx_hal_flash.o"
+"prelab5_adchal\stm32f1xx_hal_flash_ex.o"
+"prelab5_adchal\stm32f1xx_hal_exti.o"
+"prelab5_adchal\stm32f1xx_hal_tim.o"
+"prelab5_adchal\stm32f1xx_hal_tim_ex.o"
+"prelab5_adchal\system_stm32f1xx.o"
+--strict --scatter "prelab5_AdcHal\prelab5_AdcHal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "prelab5_AdcHal.map" -o prelab5_AdcHal\prelab5_AdcHal.axf

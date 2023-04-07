@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"knightriderlab5\startup_stm32f103x6.o"
+"knightriderlab5\main.o"
+"knightriderlab5\stm32f1xx_it.o"
+"knightriderlab5\stm32f1xx_hal_msp.o"
+"knightriderlab5\stm32f1xx_hal_gpio_ex.o"
+"knightriderlab5\stm32f1xx_hal_adc.o"
+"knightriderlab5\stm32f1xx_hal_adc_ex.o"
+"knightriderlab5\stm32f1xx_hal.o"
+"knightriderlab5\stm32f1xx_hal_rcc.o"
+"knightriderlab5\stm32f1xx_hal_rcc_ex.o"
+"knightriderlab5\stm32f1xx_hal_gpio.o"
+"knightriderlab5\stm32f1xx_hal_dma.o"
+"knightriderlab5\stm32f1xx_hal_cortex.o"
+"knightriderlab5\stm32f1xx_hal_pwr.o"
+"knightriderlab5\stm32f1xx_hal_flash.o"
+"knightriderlab5\stm32f1xx_hal_flash_ex.o"
+"knightriderlab5\stm32f1xx_hal_exti.o"
+"knightriderlab5\stm32f1xx_hal_tim.o"
+"knightriderlab5\stm32f1xx_hal_tim_ex.o"
+"knightriderlab5\system_stm32f1xx.o"
+--strict --scatter "knightriderlab5\knightriderlab5.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "knightriderlab5.map" -o knightriderlab5\knightriderlab5.axf

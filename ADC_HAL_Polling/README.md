@@ -8,5 +8,5 @@ For the calculating 1.5 V that we assume as a minimum voltage, we should use the
 
 (1.5V / 3.3 V) \* 2^12
 
-That is nearly equal to 1861. If we chane that one to hexadecimal, It will be equal to 0x745.
+That is nearly equal to 1861. If we change that one to hexadecimal, It will be equal to 0x745.
 So, we just use this value when we compare the ADC value to blink the led.

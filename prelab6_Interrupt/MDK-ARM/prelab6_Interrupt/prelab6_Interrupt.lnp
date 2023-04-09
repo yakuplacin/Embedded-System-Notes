@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"prelab6_interrupt\startup_stm32f103x6.o"
+"prelab6_interrupt\main.o"
+"prelab6_interrupt\stm32f1xx_it.o"
+"prelab6_interrupt\stm32f1xx_hal_msp.o"
+"prelab6_interrupt\stm32f1xx_hal_gpio_ex.o"
+"prelab6_interrupt\stm32f1xx_hal_tim.o"
+"prelab6_interrupt\stm32f1xx_hal_tim_ex.o"
+"prelab6_interrupt\stm32f1xx_hal.o"
+"prelab6_interrupt\stm32f1xx_hal_rcc.o"
+"prelab6_interrupt\stm32f1xx_hal_rcc_ex.o"
+"prelab6_interrupt\stm32f1xx_hal_gpio.o"
+"prelab6_interrupt\stm32f1xx_hal_dma.o"
+"prelab6_interrupt\stm32f1xx_hal_cortex.o"
+"prelab6_interrupt\stm32f1xx_hal_pwr.o"
+"prelab6_interrupt\stm32f1xx_hal_flash.o"
+"prelab6_interrupt\stm32f1xx_hal_flash_ex.o"
+"prelab6_interrupt\stm32f1xx_hal_exti.o"
+"prelab6_interrupt\system_stm32f1xx.o"
+--strict --scatter "prelab6_Interrupt\prelab6_Interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "prelab6_Interrupt.map" -o prelab6_Interrupt\prelab6_Interrupt.axf

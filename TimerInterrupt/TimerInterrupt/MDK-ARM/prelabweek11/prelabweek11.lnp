@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"prelabweek11\startup_stm32f103x6.o"
+"prelabweek11\main.o"
+"prelabweek11\stm32f1xx_it.o"
+"prelabweek11\stm32f1xx_hal_msp.o"
+"prelabweek11\stm32f1xx_hal_gpio_ex.o"
+"prelabweek11\stm32f1xx_hal_tim.o"
+"prelabweek11\stm32f1xx_hal_tim_ex.o"
+"prelabweek11\stm32f1xx_hal.o"
+"prelabweek11\stm32f1xx_hal_rcc.o"
+"prelabweek11\stm32f1xx_hal_rcc_ex.o"
+"prelabweek11\stm32f1xx_hal_gpio.o"
+"prelabweek11\stm32f1xx_hal_dma.o"
+"prelabweek11\stm32f1xx_hal_cortex.o"
+"prelabweek11\stm32f1xx_hal_pwr.o"
+"prelabweek11\stm32f1xx_hal_flash.o"
+"prelabweek11\stm32f1xx_hal_flash_ex.o"
+"prelabweek11\stm32f1xx_hal_exti.o"
+"prelabweek11\system_stm32f1xx.o"
+--strict --scatter "prelabweek11\prelabweek11.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "prelabweek11.map" -o prelabweek11\prelabweek11.axf

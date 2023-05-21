@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"llab11\startup_stm32f107xc.o"
+"llab11\main.o"
+"llab11\stm32f1xx_it.o"
+"llab11\stm32f1xx_hal_msp.o"
+"llab11\stm32f1xx_hal_gpio_ex.o"
+"llab11\stm32f1xx_hal_tim.o"
+"llab11\stm32f1xx_hal_tim_ex.o"
+"llab11\stm32f1xx_hal.o"
+"llab11\stm32f1xx_hal_rcc.o"
+"llab11\stm32f1xx_hal_rcc_ex.o"
+"llab11\stm32f1xx_hal_gpio.o"
+"llab11\stm32f1xx_hal_dma.o"
+"llab11\stm32f1xx_hal_cortex.o"
+"llab11\stm32f1xx_hal_pwr.o"
+"llab11\stm32f1xx_hal_flash.o"
+"llab11\stm32f1xx_hal_flash_ex.o"
+"llab11\stm32f1xx_hal_exti.o"
+"llab11\system_stm32f1xx.o"
+--strict --scatter "llab11\llab11.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "llab11.map" -o llab11\llab11.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dma_adc_read_final\startup_stm32f103xb.o"
+"dma_adc_read_final\main.o"
+"dma_adc_read_final\stm32f1xx_it.o"
+"dma_adc_read_final\stm32f1xx_hal_msp.o"
+"dma_adc_read_final\stm32f1xx_hal_gpio_ex.o"
+"dma_adc_read_final\stm32f1xx_hal_adc.o"
+"dma_adc_read_final\stm32f1xx_hal_adc_ex.o"
+"dma_adc_read_final\stm32f1xx_hal.o"
+"dma_adc_read_final\stm32f1xx_hal_rcc.o"
+"dma_adc_read_final\stm32f1xx_hal_rcc_ex.o"
+"dma_adc_read_final\stm32f1xx_hal_gpio.o"
+"dma_adc_read_final\stm32f1xx_hal_dma.o"
+"dma_adc_read_final\stm32f1xx_hal_cortex.o"
+"dma_adc_read_final\stm32f1xx_hal_pwr.o"
+"dma_adc_read_final\stm32f1xx_hal_flash.o"
+"dma_adc_read_final\stm32f1xx_hal_flash_ex.o"
+"dma_adc_read_final\stm32f1xx_hal_exti.o"
+"dma_adc_read_final\stm32f1xx_hal_tim.o"
+"dma_adc_read_final\stm32f1xx_hal_tim_ex.o"
+"dma_adc_read_final\stm32f1xx_hal_uart.o"
+"dma_adc_read_final\system_stm32f1xx.o"
+--strict --scatter "dma_adc_read_final\dma_adc_read_final.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dma_adc_read_final.map" -o dma_adc_read_final\dma_adc_read_final.axf
